@@ -1,0 +1,9 @@
+Problem Statement:
+
+1. Enter the file name to search in the entire system
+2. Get all files from the entire system that matches the entered filename
+3. Get the file format as input from the user and merge the files of that fromat.
+	searched: 'krish', then I should get all the files having 'krish' in their names (irrespective of the file type).
+	lets say we got krishna.txt,krish.txt,krishhh.txt,krisha.pdf,krish1.pdf
+lets say, we get .txt 
+4. then we need to read all the txt files and write into a new file
