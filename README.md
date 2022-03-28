@@ -8,9 +8,9 @@ Materials/Resources using which I learnt
    *  [Python Projects/Tasks](https://github.com/KrishAleti/My-Resources/tree/main/Python_iNeuron/Tasks_Challenges):
       * [OS Module Task](https://github.com/KrishAleti/My-Resources/tree/main/Python_iNeuron/Tasks_Challenges/OS%20Module%20Task)
       * [File Automation](https://github.com/KrishAleti/My-Resources/tree/main/Python_iNeuron/Tasks_Challenges/File%20Automation%20Task)
-4. [DataBases]()
-   * [MySQL]()
+4. [DataBases](https://github.com/KrishAleti/My-Resources/tree/main/Databases)
+   * [MySQL](https://github.com/KrishAleti/My-Resources/tree/main/Databases/MySQL)
       * Project: [Bank Management System]()
-   * [MongoDB]()
-   * [Cassandra]()
+   * [MongoDB](https://github.com/KrishAleti/My-Resources/tree/main/Databases/MongoDB)
+   * [Cassandra](https://github.com/KrishAleti/My-Resources/tree/main/Databases/Cassandra)
 
