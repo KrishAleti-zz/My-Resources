@@ -1,0 +1,6 @@
+Problem Statement:
+1. Download all the assignments
+2. create a folder based on the doc files name (consider only doc files in the folder)
+3. If there are any files having names ending with 1(1).docx,2(1).docx then change them to 1 1.docx and 2 2.docx
+4. read the content of all the files and write into a new master file
+5. moves files into the respective folder
