@@ -11,7 +11,7 @@ Materials/Resources using which I learnt
 4. [DataBases](https://github.com/KrishAleti/My-Resources/tree/main/Databases)
    * [MySQL](https://github.com/KrishAleti/My-Resources/tree/main/Databases/MySQL)
       * Task: [Carbon Nanotubes_MySQL](https://github.com/KrishAleti/My-Resources/tree/main/Databases/MySQL/Tasks_Challenges/Carbon%20NanoTubes_MySQL%20Task)
-      * Project: [Bank Management System]()
+      * Project: [Bank Management System](https://github.com/KrishAleti/Bank-Management-System_MySQL)
    * [MongoDB](https://github.com/KrishAleti/My-Resources/tree/main/Databases/MongoDB)
    * [Cassandra](https://github.com/KrishAleti/My-Resources/tree/main/Databases/Cassandra)
 
