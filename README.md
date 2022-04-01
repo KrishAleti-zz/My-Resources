@@ -10,6 +10,7 @@ Materials/Resources using which I learnt
       * [File Automation](https://github.com/KrishAleti/My-Resources/tree/main/Python_iNeuron/Tasks_Challenges/File%20Automation%20Task)
 4. [DataBases](https://github.com/KrishAleti/My-Resources/tree/main/Databases)
    * [MySQL](https://github.com/KrishAleti/My-Resources/tree/main/Databases/MySQL)
+      * Task: [Carbon Nanotubes_MySQL](https://github.com/KrishAleti/My-Resources/tree/main/Databases/MySQL/Tasks_Challenges/Carbon%20NanoTubes_MySQL%20Task)
       * Project: [Bank Management System]()
    * [MongoDB](https://github.com/KrishAleti/My-Resources/tree/main/Databases/MongoDB)
    * [Cassandra](https://github.com/KrishAleti/My-Resources/tree/main/Databases/Cassandra)
