@@ -14,5 +14,5 @@ Materials/Resources using which I learnt
       * Project: [Bank Management System](https://github.com/KrishAleti/Bank-Management-System_MySQL)
    * [MongoDB](https://github.com/KrishAleti/My-Resources/tree/main/Databases/MongoDB)
    * [Cassandra](https://github.com/KrishAleti/My-Resources/tree/main/Databases/Cassandra)
-   * [Databases-APIs](https://github.com/KrishAleti/My-Resources/tree/main/Databases/Databases_API)
+   * [Databases-APIs](https://github.com/KrishAleti/My-Resources/tree/main/Databases/Databases_APIs)
 
