@@ -3,7 +3,7 @@ import csv
 import pandas as pd
 from flask import Flask, render_template, request, jsonify
 
-#install mysql-connector-python
+# install mysql-connector-python
 import mysql.connector as connection
 from mysql.connector import DatabaseError
 
