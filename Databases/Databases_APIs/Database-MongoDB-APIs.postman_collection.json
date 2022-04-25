@@ -1,0 +1,422 @@
+{
+	"info": {
+		"_postman_id": "69fa14af-967c-4025-b340-5aa1adb5115e",
+		"name": "Database:MongoDB-APIs",
+		"description": "[https://documenter.getpostman.com/view/19157388/UVyxRtwS](https://documenter.getpostman.com/view/19157388/UVyxRtwS)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "mongodb_establishconnection",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n\"localhost\" : \"localhost\",\r\n\"port\" : 27017\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/mongodb/connection",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"mongodb",
+						"connection"
+					]
+				},
+				"description": "To establish connection with the MongoDB database."
+			},
+			"response": []
+		},
+		{
+			"name": "mongodb_dblist",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"localhost\": \"localhost\",\r\n    \"port\": 27017\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/mongodb/dblist",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"mongodb",
+						"dblist"
+					]
+				},
+				"description": "To show the list of databases."
+			},
+			"response": []
+		},
+		{
+			"name": "mongodb_createdb",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"localhost\": \"localhost\",\r\n    \"port\": 27017,\r\n    \"dbname\": \"mongodb1104\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/mongodb/createdb",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"mongodb",
+						"createdb"
+					]
+				},
+				"description": "MongoDB - create database."
+			},
+			"response": []
+		},
+		{
+			"name": "mongodb_createcollection",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"localhost\": \"localhost\",\r\n    \"port\": 27017,\r\n    \"dbname\": \"mongodb1104\",\r\n    \"collection_name\": \"coll1104\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/mongodb/db/create_collection",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"mongodb",
+						"db",
+						"create_collection"
+					]
+				},
+				"description": "To create a collection in the database.\r\n\r\nCollection in MongoDB is equivalent to Table in MySQL."
+			},
+			"response": []
+		},
+		{
+			"name": "mongodb_insertdata",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"localhost\": \"localhost\",\r\n    \"port\": 27017,\r\n    \"dbname\": \"mongodb1104\",\r\n    \"collection_name\": \"coll1104\",\r\n    \"record\": {\"portalname\":\"iNeuron\",\"products\":\"edtech\",\"course\":\"FSDS\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/mongodb/db/collection/insertdata",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"mongodb",
+						"db",
+						"collection",
+						"insertdata"
+					]
+				},
+				"description": "Inseting data in the table."
+			},
+			"response": []
+		},
+		{
+			"name": "mongodb_insertbulkdata",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"localhost\": \"localhost\",\r\n    \"port\": 27017,\r\n    \"dbname\": \"mongodb1104\",\r\n    \"collection_name\": \"coll1104\",\r\n    \"list_of_records\":\r\n    [\r\n    {\"portalname\":\"iNeuron3\",\r\n    \"products\":\"edtech3\",\r\n    \"course\":\"FSDS3\"},\r\n    {\"portalname\":\"iNeuron1\",\r\n    \"products\":\"edtech1\",\r\n    \"course\":\"FSDS1\"},\r\n    {\"portalname\":\"iNeuron2\",\r\n    \"products\":\"edtech2\",\r\n    \"course\":\"FSDS2\",\r\n    \"check\":\"test\"}\r\n    ]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/mongodb/db/collection/insert_bulkdata",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"mongodb",
+						"db",
+						"collection",
+						"insert_bulkdata"
+					]
+				},
+				"description": "Inserting bulk data into the collection."
+			},
+			"response": []
+		},
+		{
+			"name": "mongodb_insertdata_fromcsv",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"localhost\": \"localhost\",\r\n    \"port\": 27017,\r\n    \"dbname\": \"dbcsv\",\r\n    \"collection_name\": \"csvcol\",\r\n    \"file\": \"D:\\\\Edu\\\\Data Science_iNeuron\\\\Live_Class_Notes\\\\DataBases\\\\MongoDB\\\\mydata.csv\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/mongodb/db/collection/insertdata_fromfile",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"mongodb",
+						"db",
+						"collection",
+						"insertdata_fromfile"
+					]
+				},
+				"description": "insertion of bulk data from the data source.\n\n*   \"filepath\" : \"D:\\\\Edu\\\\Data Science_iNeuron\\\\Live_Class_Notes\\\\DataBases\\\\MongoDB\\\\mydata.csv\"\n    \n\nWhen we use the path as above we get the error:\n\n***invalid escape character in string.***\n\n**To fix the issue we need to use give the path like this:**\n\n\"D:\\\\\\\\Edu\\\\Data Science_iNeuron\\\\\\\\Live_Class_Notes\\\\\\\\DataBases\\\\\\\\MongoDB\\\\\\\\mydata.csv\"\n\n```\nFilepath: \"D:\\\\Edu\\Data Science_iNeuron\\\\Live_Class_Notes\\\\DataBases\\\\MongoDB\\\\mydata.csv\"\n\n```"
+			},
+			"response": []
+		},
+		{
+			"name": "mongodb_readdata",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"localhost\": \"localhost\",\r\n    \"port\": 27017,\r\n    \"dbname\": \"dbcsv\",\r\n    \"collection_name\": \"csvcol\",\r\n    \"col\" : \"Name\",\r\n    \"val\" : \"krish\"\r\n     \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/mongodb/db/collection/readdata",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"mongodb",
+						"db",
+						"collection",
+						"readdata"
+					]
+				},
+				"description": "To fetch/read data from the collection."
+			},
+			"response": []
+		},
+		{
+			"name": "mongodb_updatedata",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"localhost\": \"localhost\",\r\n    \"port\": 27017,\r\n    \"dbname\": \"dbcsv\",\r\n    \"collection_name\": \"csvcol\",\r\n    \r\n    \"updatedcol\" : \"Name\",\r\n    \"updatedval\" : \"SDE2\",\r\n\r\n    \"col2update\" : \"ID\",\r\n    \"val2update\" : \"123\"\r\n     \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/mongodb/db/collection/updatedata",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"mongodb",
+						"db",
+						"collection",
+						"updatedata"
+					]
+				},
+				"description": "To update data in the collection."
+			},
+			"response": []
+		},
+		{
+			"name": "mongodb_downloaddata",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"localhost\": \"localhost\",\r\n    \"port\": 27017,\r\n    \"dbname\": \"dbcsv\",\r\n    \"collection_name\": \"csvcol\",    \r\n    \"filepath2download\" : \"D:\\\\Edu\\\\Data Science_iNeuron\\\\Live_Class_Notes\\\\DataBases\\\\Databases_API\\\\mongotestdata.csv\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/mongodb/db/collection/downloaddata",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"mongodb",
+						"db",
+						"collection",
+						"downloaddata"
+					]
+				},
+				"description": "Writing data of a collection into a CSV file."
+			},
+			"response": []
+		},
+		{
+			"name": "mongodb_deletedata",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"localhost\": \"localhost\",\r\n    \"port\": 27017,\r\n    \"dbname\": \"dbcsv\",\r\n    \"collection_name\": \"csvcol\",\r\n\r\n    \"colname\" : \"ID\",\r\n    \"value\" : \"457\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/mongodb/db/collection/deletedata",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"mongodb",
+						"db",
+						"collection",
+						"deletedata"
+					]
+				},
+				"description": "To delete record from the collection based on some condition."
+			},
+			"response": []
+		},
+		{
+			"name": "mongodb_dropcollection",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"localhost\": \"localhost\",\r\n    \"port\": 27017,\r\n    \"dbname\": \"csvdb\",\r\n    \"collection_name\": \"csvcol\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/mongodb/db/dropcollection",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"mongodb",
+						"db",
+						"dropcollection"
+					]
+				},
+				"description": "Dropping a colelction from the database."
+			},
+			"response": []
+		}
+	]
+}
