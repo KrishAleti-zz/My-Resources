@@ -1,2 +1,0 @@
-Heroku: https://krish-app01.herokuapp.com/
-git: https://git.heroku.com/krish-app01.git
