@@ -1,0 +1,19 @@
+We can get the code snippets for flask-database usage from te below urls:
+https://flask.palletsprojects.com/en/2.1.x/quickstart/
+https://flask-sqlalchemy.palletsprojects.com/en/2.x/quickstart/#a-minimal-application
+
+
+Database configuration - code snippet:- https://flask-sqlalchemy.palletsprojects.com/en/2.x/config/
+
+getting module not found error for mysql db, hence we are using pymysql
+ https://stackoverflow.com/questions/454854/no-module-named-mysqldb
+we need to edit the SQLAlchemy URL schema like this: mysql+pymysql://username:passwd@host/database 
+as we are installed PyMySQL.
+
+Defining the class to create the table and defining the columns of the taable:-
+https://flask-sqlalchemy.palletsprojects.com/en/2.x/quickstart/#a-minimal-application
+https://flask-sqlalchemy.palletsprojects.com/en/2.x/models/
+
+
+Inserting values in the database:-
+https://flask-sqlalchemy.palletsprojects.com/en/2.x/queries/?highlight=insert
