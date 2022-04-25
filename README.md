@@ -15,5 +15,6 @@ Materials/Resources using which I learnt
    * [MongoDB](https://github.com/KrishAleti/My-Resources/tree/main/Databases/MongoDB)
    * [Cassandra](https://github.com/KrishAleti/My-Resources/tree/main/Databases/Cassandra)
    * [Databases-APIs](https://github.com/KrishAleti/My-Resources/tree/main/Databases/Databases_APIs)
-5. [Flask]()
-6. [Django]()
+5. [Flask](https://github.com/KrishAleti/My-Resources/tree/main/Flask)
+  * [Flask_DB_Heroku](https://github.com/KrishAleti/My-Resources/tree/main/Flask_db_heroku)
+7. [Django]()
