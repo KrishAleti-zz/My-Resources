@@ -17,4 +17,5 @@ Materials/Resources using which I learnt
      * [Databases-APIs](https://github.com/KrishAleti/My-Resources/tree/main/Databases/Databases_APIs)
 5. [Flask](https://github.com/KrishAleti/My-Resources/tree/main/Flask) - API_Postman_Flask
     * Deploying an app into Heroku created using Flask: [Flask_Database_Heroku](https://github.com/KrishAleti/My-Resources/tree/main/Flask_Database_Heroku)
-7. [Django]()
+7. [Django](https://github.com/KrishAleti/My-Resources/tree/main/Django)
+     * Connecting Django with PostgreSQL database: [Django with Database](https://github.com/KrishAleti/My-Resources/tree/main/Django_telusko)
